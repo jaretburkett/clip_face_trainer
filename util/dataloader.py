@@ -73,4 +73,4 @@ class FaceDataset(Dataset):
 
 def get_dataloader(config: dict):
     face_dataset = FaceDataset(config)
-    return DataLoader(face_dataset, batch_size=config['batch_size'], shuffle=True, num_workers=2)
+    return DataLoader(face_dataset, batch_size=config['batch_size'], shuffle=True, num_workers=6)
